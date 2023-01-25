@@ -15,13 +15,15 @@ import { MatListModule } from '@angular/material/list';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { ArtisteMangementComponent } from './artiste-mangement/artiste-mangement.component';
 import { ImageMangementComponent } from './image-mangement/image-mangement.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavAdminComponent,
     ArtisteMangementComponent,
-    ImageMangementComponent
+    ImageMangementComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
