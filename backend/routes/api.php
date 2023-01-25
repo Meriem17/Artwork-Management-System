@@ -102,3 +102,14 @@ Route::group([
     Route::put('update/{id}', 'App\Http\Controllers\ExpositionController@update');
     Route::delete('destroy/{id}', 'App\Http\Controllers\ExpositionController@destroy');
 });
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'ficheOeuvre'
+], function () {
+    Route::get('index', 'App\Http\Controllers\FicheOeuvreController@index');
+    Route::post('store', 'App\Http\Controllers\FicheOeuvreController@store');
+    Route::get('show/{id}', 'App\Http\Controllers\FicheOeuvreController@show');
+    Route::put('update/{id}', 'App\Http\Controllers\FicheOeuvreController@update');
+    Route::delete('destroy/{id}', 'App\Http\Controllers\FicheOeuvreController@destroy');
+});
