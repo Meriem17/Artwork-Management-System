@@ -35,7 +35,7 @@ class ArtisteController extends Controller
                 'lieuNaissance', 
                 'dateDeces',
                 'lieuDeces',
-                'Nationalité'=> 'required',
+                'Nationalite'=> 'required',
                 'Biographie'=> 'required|max:500',
             ]);
 
@@ -47,7 +47,7 @@ class ArtisteController extends Controller
         "lieuNaissance"=> $request->lieuNaissance,
         "dateDeces"=> $request->dateDeces,
         "lieuDeces"=> $request->lieuDeces,
-        "Nationalité"=> $request->Nationalité,
+        "Nationalite"=> $request->Nationalite,
         "Biographie"=> $request->Biographie,
     ]);
 
@@ -85,7 +85,7 @@ class ArtisteController extends Controller
         'lieuNaissance', 
         'dateDeces',
         'lieuDeces',
-        'Nationalité'=> 'required',
+        'Nationalite'=> 'required',
         'Biographie'=> 'required|max:500',
     ]);
 
@@ -97,7 +97,7 @@ class ArtisteController extends Controller
         'lieuNaissance'=> $request->lieuNaissance,
         'dateDeces'=> $request->dateDeces,
         'lieuDeces'=> $request->lieuDeces,
-        'Nationalité'=> $request->Nationalité,
+        'Nationalite'=> $request->Nationalite,
         'Biographie'=> $request->Biographie,
 
     ]);

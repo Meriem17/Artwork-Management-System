@@ -31,12 +31,14 @@ class SignatureController extends Controller
             $this->validate($request, [
                 'localisation'=> 'required',
                 'description'=> 'required',
+                'ouvrage_id'=> 'required',
             ]);
 
     // On crée un nouvel utilisateur
     $signature = Signature::create([
         "localisation"=> $request->localisation,
         "description"=> $request->description,
+        'ouvrage_id'=> $request->ouvrage_id,
     ]);
 
     // On retourne les informations du nouvel utilisateur en JSON
@@ -69,6 +71,7 @@ class SignatureController extends Controller
     $this->validate($request, [
         'localisation'=> 'required',
         'description'=> 'required',
+        'ouvrage_id'=> 'required',
        
     ]);
 
@@ -76,6 +79,7 @@ class SignatureController extends Controller
     $signature->update([
         "localisation"=> $request->localisation,
         "description"=> $request->description,
+        'ouvrage_id'=> $request->ouvrage_id,
     ]);
 
     // On retourne la réponse JSON

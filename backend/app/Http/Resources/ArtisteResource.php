@@ -22,7 +22,7 @@ class ArtisteResource extends JsonResource
             'lieuNaissance'=> ucfirst($this->lieuNaissance),
             'dateDeces'=> $this->dateDeces,
             'lieuDeces'=> ucfirst($this->lieuDeces),
-            'Nationalité'=> ucfirst($this->Nationalité),
+            'Nationalite'=> ucfirst($this->Nationalité),
             'Biographie'=> ucfirst($this->Biographie),
 
         ];

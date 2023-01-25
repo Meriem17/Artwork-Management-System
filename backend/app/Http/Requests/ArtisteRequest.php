@@ -30,7 +30,7 @@ class ArtisteRequest extends FormRequest
             'lieuNaissance', 
             'dateDeces',
             'lieuDeces',
-            'Nationalité'=> 'required',
+            'Nationalite'=> 'required',
             'Biographie'=> 'required|max:500',
         ];
     }

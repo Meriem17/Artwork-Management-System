@@ -23,6 +23,7 @@ class AcquisitionResource extends JsonResource
             'moyenAcquisition'=> ucfirst($this->localisation),
             'preuveAchat'=> ucfirst($this->localisation),
             'certificatAuthenticite'=> ucfirst($this->localisation),
+            'ouvrage_id'=> $this->ouvrage_id
             
         ];
     }
