@@ -16,6 +16,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { ArtisteMangementComponent } from './artiste-mangement/artiste-mangement.component';
 import { ImageMangementComponent } from './image-mangement/image-mangement.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { WelcomepageComponent } from './welcomepage/welcomepage.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NavAdminComponent,
     ArtisteMangementComponent,
     ImageMangementComponent,
-    SidebarComponent
+    SidebarComponent,
+    NavbarComponent,
+    WelcomepageComponent
   ],
   imports: [
     BrowserModule,
