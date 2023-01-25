@@ -7,7 +7,19 @@ import { ArtisteService } from '../services/artiste.service';
   styleUrls: ['./artiste-mangement.component.css']
 })
 export class ArtisteMangementComponent {
+  hideSelection : boolean = true;
+  modalVisibility : boolean = true;
+  modalVisibility1 : boolean = true;
   constructor(private artisteService: ArtisteService) { }
+
+  handleEventClick(event: any){
+
+    this.modalVisibility = false;
+  }
+  handleEventClick1(event: any){
+
+    this.modalVisibility1 = false;
+  }
   artistes:any;
   page = 1;
   count = 0;
@@ -15,12 +27,12 @@ export class ArtisteMangementComponent {
   pageSizes = [5, 10, 15, 20];
   currentIndex = -1;
   ngOnInit(): void {
-    
+
          this.artisteService.getArtistes().subscribe(
          (result) =>{console.warn("result"),
                         this.artistes=result});
-  
-  
+
+
     }
     handlePageChange(event: number)
 {

@@ -1,5 +1,5 @@
-<p>artiste-mangement works!</p>
-<div id="table" class="table-editable">
+<!-- <p>artiste-mangement works!</p>
+<div id="table" class="table-Deleteable">
     <span class="table-add glyphicon glyphicon-plus"></span>
     <table class="table">
       <tr >
@@ -10,7 +10,7 @@
         <th>lieuNaissance</th>
          <th>dateDeces</th>
       <th>lieuDeces</th>
-      
+
          <th>Nationalité</th>
          <th>Biographie</th>
 
@@ -35,11 +35,11 @@
          <td>{{supplier.dateDeces}}</td>
         <td>{{supplier.lieuDeces}}</td>
         <td>{{supplier.Nationalite}}</td>
-        
+
         <td>{{supplier.Biographie}}</td>
 
         <td >
-           <button class="edit" type="submit" >
+           <button class="Delete" type="submit" >
                   <mat-icon class="blue" ngxMatFileInputIcon>create</mat-icon>
            </button>
         </td>
@@ -49,7 +49,7 @@
         </button>
         </td>
       </tr>
-      <!-- This is our clonable table line -->
+      This is our clonable table line
 
     </table>
   </div>
@@ -59,3 +59,786 @@
                                nextLabel="Suivant"
                                previousLabel="Précedent"
           ></pagination-controls>
+ -->
+
+
+
+
+ <div class="row wrapper border-bottom white-bg page-heading">
+
+  <div class="col-lg-10">
+      <h2>Hasdrubal foundation artists list</h2>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="">Menu</a>
+        </li>
+
+        <li class="breadcrumb-item active">
+          <strong>Artists Management
+          </strong>
+        </li>
+
+        <li class="breadcrumb-item active">
+          <strong>Artists list
+
+          </strong>
+        </li>
+      </ol>
+    </div>
+    <div class="col-sm-2">
+      <div class="title-action">
+          <button  class="btn btn-primary" (click)="modalVisibility1 = false">+ Artist</button>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="ibox-content">
+
+  <table class="footable table table-stripped toggle-arrow-tiny footable-loaded tablet breakpoint" data-page-size="15">
+      <thead>
+      <tr>
+
+
+          <th data-toggle="true" class="footable-visible footable-sortable footable-first-column">Artist First Name<span class="footable-sort-indicator"></span></th>
+          <th data-hide="phone" class="footable-visible footable-sortable">Artist Last Name<span class="footable-sort-indicator"></span></th>
+          <th data-hide="all" style="display: none;" class="footable-sortable">Date of birth<span class="footable-sort-indicator"></span></th>
+          <th data-hide="phone" class="footable-visible footable-sortable">Date of birth<span class="footable-sort-indicator"></span></th>
+          <th data-hide="phone" class="footable-visible footable-sortable">Place of birth<span class="footable-sort-indicator"></span></th>
+          <th data-hide="phone" class="footable-visible footable-sortable">Date of death<span class="footable-sort-indicator"></span></th>
+          <th data-hide="phone" class="footable-visible footable-sortable">Place of death<span class="footable-sort-indicator"></span></th>
+          <th data-hide="phone" class="footable-visible footable-sortable">Nationnality<span class="footable-sort-indicator"></span></th>
+          <th data-hide="phone" class="footable-visible footable-sortable">Biography<span class="footable-sort-indicator"></span></th>
+          <th class="text-right footable-visible footable-last-column" data-sort-ignore="true">Action</th>
+
+      </tr>
+      </thead>
+
+
+
+      <tbody>
+      <tr style="" class="footable-even">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+             Example product 1
+          </td>
+          <td class="footable-visible">
+              Model 1
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $50.00
+          </td>
+          <td class="" style="display: none;">
+              1000
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="footable-visible">
+            <span class="label label-primary">Enable</span>
+        </td>
+        <td class="footable-visible">
+          <span class="label label-primary">Enable</span>
+      </td>
+
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-odd">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 2
+          </td>
+          <td class="footable-visible">
+              Model 2
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $40.00
+          </td>
+          <td class="" style="display: none;">
+              4300
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="footable-visible">
+            <span class="label label-primary">Enable</span>
+        </td>
+        <td class="footable-visible">
+          <span class="label label-primary">Enable</span>
+      </td>
+      <td class="footable-visible">
+        <span class="label label-primary">Enable</span>
+    </td>
+     <td class="footable-visible">
+          <span class="label label-primary">Enable</span>
+      </td>
+
+
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-even">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 3
+          </td>
+          <td class="footable-visible">
+              Model 3
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $22.00
+          </td>
+          <td class="" style="display: none;">
+              300
+          </td>
+          <td class="footable-visible">
+              <span class="label label-danger">Disabled</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-odd">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 4
+          </td>
+          <td class="footable-visible">
+              Model 4
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $67.00
+          </td>
+          <td class="" style="display: none;">
+              2300
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-even">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 5
+          </td>
+          <td class="footable-visible">
+              Model 5
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $76.00
+          </td>
+          <td class="" style="display: none;">
+              800
+          </td>
+          <td class="footable-visible">
+              <span class="label label-warning">Low stock</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-odd">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 6
+          </td>
+          <td class="footable-visible">
+              Model 6
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $60.00
+          </td>
+          <td class="" style="display: none;">
+              6000
+          </td>
+          <td class="footable-visible">
+              <span class="label label-danger">Disabled</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-even">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 7
+          </td>
+          <td class="footable-visible">
+              Model 7
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $32.00
+          </td>
+          <td class="" style="display: none;">
+              700
+          </td>
+          <td class="footable-visible">
+              <span class="label label-danger">Disabled</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-odd">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 8
+          </td>
+          <td class="footable-visible">
+              Model 8
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $86.00
+          </td>
+          <td class="" style="display: none;">
+              5180
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-even">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 9
+          </td>
+          <td class="footable-visible">
+              Model 9
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $97.00
+          </td>
+          <td class="" style="display: none;">
+              450
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-odd">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 10
+          </td>
+          <td class="footable-visible">
+              Model 10
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $43.00
+          </td>
+          <td class="" style="display: none;">
+              7600
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-even">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 1
+          </td>
+          <td class="footable-visible">
+              Model 1
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $50.00
+          </td>
+          <td class="" style="display: none;">
+              1000
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="footable-visible">
+            <span class="label label-primary">Enable</span>
+        </td>
+        <td class="footable-visible">
+          <span class="label label-primary">Enable</span>
+      </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-odd">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 2
+          </td>
+          <td class="footable-visible">
+              Model 2
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $40.00
+          </td>
+          <td class="" style="display: none;">
+              4300
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-even">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 3
+          </td>
+          <td class="footable-visible">
+              Model 3
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $22.00
+          </td>
+          <td class="" style="display: none;">
+              300
+          </td>
+          <td class="footable-visible">
+              <span class="label label-warning">Low stock</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-odd">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 4
+          </td>
+          <td class="footable-visible">
+              Model 4
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $67.00
+          </td>
+          <td class="" style="display: none;">
+              2300
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="" class="footable-even">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 5
+          </td>
+          <td class="footable-visible">
+              Model 5
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $76.00
+          </td>
+          <td class="" style="display: none;">
+              800
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="display: none;" class="footable-odd">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 6
+          </td>
+          <td class="footable-visible">
+              Model 6
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $60.00
+          </td>
+          <td class="" style="display: none;">
+              6000
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="display: none;" class="footable-even">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 7
+          </td>
+          <td class="footable-visible">
+              Model 7
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $32.00
+          </td>
+          <td class="" style="display: none;">
+              700
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="display: none;" class="footable-odd">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 8
+          </td>
+          <td class="footable-visible">
+              Model 8
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $86.00
+          </td>
+          <td class="" style="display: none;">
+              5180
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="display: none;" class="footable-even">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 9
+          </td>
+          <td class="footable-visible">
+              Model 9
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $97.00
+          </td>
+          <td class="" style="display: none;">
+              450
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+      <tr style="display: none;" class="footable-odd">
+          <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>
+              Example product 10
+          </td>
+          <td class="footable-visible">
+              Model 10
+          </td>
+          <td style="display: none;">
+              It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout. The point of using Lorem Ipsum is
+              that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like readable English.
+          </td>
+          <td class="footable-visible">
+              $43.00
+          </td>
+          <td class="" style="display: none;">
+              7600
+          </td>
+          <td class="footable-visible">
+              <span class="label label-primary">Enable</span>
+          </td>
+          <td class="text-right footable-visible footable-last-column">
+              <div class="btn-group">
+                  <button class="btn-white btn btn-xs">Edit</button>
+                  <button class="btn-white btn btn-xs">Delete</button>
+              </div>
+          </td>
+      </tr>
+
+
+      </tbody>
+      <tfoot>
+      <tr>
+          <td colspan="6" class="footable-visible">
+              <ul class="pagination float-right"><li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li><li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">‹</a></li><li class="footable-page active"><a data-page="0" href="#">1</a></li><li class="footable-page"><a data-page="1" href="#">2</a></li><li class="footable-page-arrow"><a data-page="next" href="#next">›</a></li><li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li></ul>
+          </td>
+      </tr>
+      </tfoot>
+  </table>
+
+</div>
+
+
+
+  <!--MODAL : Form Add artist-->
+  <div class="modal inmodal fade show" id="event-modal1" tabindex="-1" role="dialog" aria-modal="true" style="display: block;" [hidden]="modalVisibility1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" (click)="modalVisibility1 = true" style="padding-top: 1%;"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+
+                    <form>
+
+                      <div class="form-group row" style="display: flex;"><label class="col-sm-2 col-form-label">First Name </label>
+
+                        <div class="col-sm-10">
+
+
+                            <div class="input-group" ><input type="text" placeholder="Artist First Name" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row" style="display: flex;"><label class="col-sm-2 col-form-label">Last Name </label>
+
+                      <div class="col-sm-10">
+
+
+                          <div class="input-group" ><input type="text" placeholder="Artist Last Name" class="form-control">
+                          </div>
+                      </div>
+                  </div>
+
+                            <div class="form-group row" style="display: flex;"><label class="col-sm-2 col-form-label">Date of birth </label>
+                                <div class="col-sm-10">
+                                    <div class="input-group" ><input type="date" placeholder="Artist date of birth" class="form-control"> <span class="input-group-append">  </span></div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row" style="display: flex;"><label class="col-sm-2 col-form-label">Place of birth </label>
+                              <div class="col-sm-10">
+                                  <div class="input-group" ><input type="text" placeholder="Artist place of birth" class="form-control">
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="form-group row" style="display: flex;"><label class="col-sm-2 col-form-label">Date of death </label>
+                              <div class="col-sm-10">
+                                  <div class="input-group" ><input type="date" placeholder="Artist date of death" class="form-control">
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="form-group row" style="display: flex;"><label class="col-sm-2 col-form-label">Place of death </label>
+                              <div class="col-sm-10">
+                                  <div class="input-group" ><input type="text" placeholder="Artist Place of death" class="form-control">
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group row" style="display: flex;"><label class="col-sm-2 col-form-label">Nationnality</label>
+                              <div class="col-sm-10">
+                                  <div class="input-group" ><input type="text" placeholder="Artist nationnality" class="form-control">
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="form-group row" style="display: flex;"><label class="col-sm-2 col-form-label">Biography </label>
+                              <div class="col-sm-10">
+                                  <div class="input-group" ><input type="text" placeholder="Artist biography" class="form-control">
+                                  </div>
+                              </div>
+                            </div>
+
+
+                    </form>
+
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" (click)="modalVisibility1 = true">Close</button>
+                <button style="width: 70px;display: flex;justify-content: center" type="button" (click)="modalVisibility1 = true" class="btn btn-primary">
+                  <span >Save</span>
+
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="black-bg" [hidden]="modalVisibility1"></div>
