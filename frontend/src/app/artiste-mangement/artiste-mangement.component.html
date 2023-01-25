@@ -1,68 +1,3 @@
-<!-- <p>artiste-mangement works!</p>
-<div id="table" class="table-Deleteable">
-    <span class="table-add glyphicon glyphicon-plus"></span>
-    <table class="table">
-      <tr >
-        <th>#</th>
-        <th>nom</th>
-         <th>prenom</th>
-        <th>dateNaissance</th>
-        <th>lieuNaissance</th>
-         <th>dateDeces</th>
-      <th>lieuDeces</th>
-
-         <th>Nationalité</th>
-         <th>Biographie</th>
-
-       <th >
-
-              </th>
-
-              <th>
-
-              </th>
-      </tr>
-      <tr tabindex="-1" *ngFor="let supplier of artistes.data|paginate : {
-        itemsPerPage: pageSize,
-        currentPage: page,
-        totalItems: count
-      }; let i = index">
-        <td>{{supplier.id}}</td>
-        <td>{{supplier.nom}}</td>
-         <td>{{supplier.prenom}}</td>
-        <td>{{supplier.dateNaissance}}</td>
-        <td>{{supplier.lieuNaissance}}</td>
-         <td>{{supplier.dateDeces}}</td>
-        <td>{{supplier.lieuDeces}}</td>
-        <td>{{supplier.Nationalite}}</td>
-
-        <td>{{supplier.Biographie}}</td>
-
-        <td >
-           <button class="Delete" type="submit" >
-                  <mat-icon class="blue" ngxMatFileInputIcon>create</mat-icon>
-           </button>
-        </td>
-        <td  >
-        <button class="delete">
-                  <mat-icon class="red" ngxMatFileInputIcon>delete_forever</mat-icon>
-        </button>
-        </td>
-      </tr>
-      This is our clonable table line
-
-    </table>
-  </div>
-    <pagination-controls class="my-pagination"
-                         (pageChange)="handlePageChange($event)"
-                               [responsive]="true"
-                               nextLabel="Suivant"
-                               previousLabel="Précedent"
-          ></pagination-controls>
- -->
-
-
-
 
  <div class="row wrapper border-bottom white-bg page-heading">
 
@@ -91,15 +26,6 @@
       </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
 
 
 
