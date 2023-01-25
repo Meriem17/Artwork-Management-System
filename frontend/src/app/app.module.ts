@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import {NgxPaginationModule} from 'ngx-pagination';
 import { ArtisteMangementComponent } from './artiste-mangement/artiste-mangement.component';
 import { ImageMangementComponent } from './image-mangement/image-mangement.component';
 
@@ -33,7 +34,8 @@ import { ImageMangementComponent } from './image-mangement/image-mangement.compo
     MatIconModule,
     MatListModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
