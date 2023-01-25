@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,12 +13,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { ArtisteMangementComponent } from './artiste-mangement/artiste-mangement.component';
+import { ImageMangementComponent } from './image-mangement/image-mangement.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavAdminComponent,
-    ArtisteMangementComponent
+    ArtisteMangementComponent,
+    ImageMangementComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,9 @@ import { ArtisteMangementComponent } from './artiste-mangement/artiste-mangement
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

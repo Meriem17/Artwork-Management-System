@@ -46,3 +46,15 @@ Route::group([
     Route::put('update/{id}', 'App\Http\Controllers\AcquisitionController@update');
     Route::delete('destroy/{id}', 'App\Http\Controllers\AcquisitionController@destroy');
 });
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'image'
+], function () {
+
+
+    Route::post('uploadFile', 'App\Http\Controllers\ImageController@file');
+    Route::get('index', 'App\Http\Controllers\ImageController@index');
+
+
+});

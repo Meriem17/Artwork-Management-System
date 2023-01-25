@@ -1,0 +1,10 @@
+<p>image-mangement works!</p>
+<div class='form'>
+    <form [formGroup]="createForm">
+        <input type="file"  formControlName="imagePath" text="Select File"  (change)="onFileChange($event)" >
+        <input type="text" placeholder='copyright *' class='text' required formControlName="copyright" required><br><br>
+        <input type="text" placeholder='droitsPhotographiques *' class='text' required formControlName="droitsPhotographiques" required><br><br>
+        <input type="text" placeholder='ouvrage_id*' class='text' required formControlName="ouvrage_id" required><br><br>
+        <button type="button" (click)="onSubmit()"type="submit">Save</button>
+        </form>
+</div>
