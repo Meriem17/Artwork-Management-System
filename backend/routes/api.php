@@ -80,3 +80,14 @@ Route::group([
     Route::put('update/{id}', 'App\Http\Controllers\RestaurationController@update');
     Route::delete('destroy/{id}', 'App\Http\Controllers\RestaurationController@destroy');
 });
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'pret'
+], function () {
+    Route::get('index', 'App\Http\Controllers\PretController@index');
+    Route::post('store', 'App\Http\Controllers\PretController@store');
+    Route::get('show/{id}', 'App\Http\Controllers\PretController@show');
+    Route::put('update/{id}', 'App\Http\Controllers\PretController@update');
+    Route::delete('destroy/{id}', 'App\Http\Controllers\PretController@destroy');
+});
