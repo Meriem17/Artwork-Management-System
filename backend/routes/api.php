@@ -58,3 +58,25 @@ Route::group([
 
 
 });
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'bibliographie'
+], function () {
+    Route::get('index', 'App\Http\Controllers\BibliographieController@index');
+    Route::post('store', 'App\Http\Controllers\BibliographieController@store');
+    Route::get('show/{id}', 'App\Http\Controllers\BibliographieController@show');
+    Route::put('update/{id}', 'App\Http\Controllers\BibliographieController@update');
+    Route::delete('destroy/{id}', 'App\Http\Controllers\BibliographieController@destroy');
+});
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'restauration'
+], function () {
+    Route::get('index', 'App\Http\Controllers\RestaurationController@index');
+    Route::post('store', 'App\Http\Controllers\RestaurationController@store');
+    Route::get('show/{id}', 'App\Http\Controllers\RestaurationController@show');
+    Route::put('update/{id}', 'App\Http\Controllers\RestaurationController@update');
+    Route::delete('destroy/{id}', 'App\Http\Controllers\RestaurationController@destroy');
+});

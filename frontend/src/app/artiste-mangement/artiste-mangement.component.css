@@ -1,121 +1,132 @@
 .table-editable {
-    position: relative;
-    background: #fff;
-          padding: 20px 25px;
-          margin: 30px 0;
-          border-radius: 3px;
-          box-shadow: 0 1px 1px rgba(0,0,0,.05);
-  
-    .glyphicon {
-      font-size: 20px;
-    }
+  position: relative;
+  background: #fff;
+        padding: 20px 25px;
+        margin: 30px 0;
+		border-radius: 3px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+
+  .glyphicon {
+    font-size: 20px;
   }
-  
-  .table-remove {
-    color: #700;
-    cursor: pointer;
-  
-    &:hover {
-      color: #fb8500;
-    }
-  }
-  table{
-          border-radius: 50%;
-          vertical-align: middle;
-          margin-right: 10px;
-      }
-  
-  .table-up, .table-down {
-    color: #007;
-    cursor: pointer;
-  
-    &:hover {
-      color: #00f;
-    }
-  }
-  tr :hover {background-color: #fb8500;
-  cursor: pointer;}
-  tr:nth-child(even) {background-color: #f2f2f2;
-  cursor: pointer;}
-   th {
-  
-          font-weight: normal;
-            background-color: #219ebc;
-          color: white;
-          border-bottom: solid 2px #023047;
-          position: sticky;
-          top: 0;
-          cursor: pointer;
-        }
-  
-  .table-add {
-    color: #070;
-    cursor: pointer;
-    position: absolute;
-    top: 8px;
-    right: 0;
-  
-    &:hover {
-      color: #0b0;
-    }
-  }
-  
-  .edit {
-      margin: 0;
-      padding: 0;
-      border: 0;
-  }
-  
-  
-  .delete {
-      margin: 0;
-      padding: 0;
-      border: 0;
-  }
-  
-  .red {
-     color: #DB1702
-  }
-  
-  
-  .blue {
-      color: #0131B4;
-  }
-  
-  .refresh{
-    padding-top: 12px;
-    padding-right: 50px;
-    margin: 0;
-  
-  }
-  a{
-    color: #0131B4;
-  }
-  a:visited {
-    color: green;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-  }
-  
-  pagination-controls{
-    color: #fb8500!important;
-  }
-  
-  .input {
-    border: none;
-    background: none;
-    box-shadow: 0px 2px 0px 0px #fb8500;
-    width: 100%;
+}
+
+.table-remove {
+  color: #700;
+  cursor: pointer;
+
+  &:hover {
     color: #fb8500;
-    font-size: 1em;
-    outline: none;
   }
-  
+}
+table{
+		border-radius: 50%;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+
+.table-up, .table-down {
+  color: #007;
+  cursor: pointer;
+
+  &:hover {
+    color: #00f;
+  }
+}
+tr :hover {background-color: #fb8500;
+cursor: pointer;}
+
+ th {
+
+        font-weight: normal;
+          background-color: #219ebc;
+        color: white;
+        border-bottom: solid 2px #023047;
+        position: sticky;
+        top: 0;
+        cursor: pointer;
+      }
+
+.table-add {
+  color: #070;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 0;
+
+  &:hover {
+    color: #0b0;
+  }
+}
+
+.edit {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.delete {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.red {
+   color: #DB1702
+}
+
+
+.blue {
+    color: #0131B4;
+}
+
+.refresh{
+  padding-top: 12px;
+  padding-right: 50px;
+  margin: 0;
+
+}
+a{
+  color: #0131B4;
+}
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+pagination-controls{
+  color: #fb8500!important;
+}
+
+.input {
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px #fb8500;
+  width: 100%;
+  color: #fb8500;
+  font-size: 1em;
+  outline: none;
+}
+
+
+#selectedRow table tr:focus-within{
+    color: white;
+    background: #0131B4;
+      cursor: pointer;
+}
+
+.selectedRow{
+    color: white;
+    background: #023047;
+}
+
