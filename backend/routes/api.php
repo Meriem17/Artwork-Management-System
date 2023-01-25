@@ -91,3 +91,14 @@ Route::group([
     Route::put('update/{id}', 'App\Http\Controllers\PretController@update');
     Route::delete('destroy/{id}', 'App\Http\Controllers\PretController@destroy');
 });
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'exposition'
+], function () {
+    Route::get('index', 'App\Http\Controllers\ExpositionController@index');
+    Route::post('store', 'App\Http\Controllers\ExpositionController@store');
+    Route::get('show/{id}', 'App\Http\Controllers\ExpositionController@show');
+    Route::put('update/{id}', 'App\Http\Controllers\ExpositionController@update');
+    Route::delete('destroy/{id}', 'App\Http\Controllers\ExpositionController@destroy');
+});
