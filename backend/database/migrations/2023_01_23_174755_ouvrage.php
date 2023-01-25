@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('ouvrages', function (Blueprint $table) {
             $table->id();
             $table->string('titre');
-            $table->string('dateCreation');
+            $table->date('dateCreation');
             $table->string('materials');
             $table->string('support');
             $table->string('dimensions');

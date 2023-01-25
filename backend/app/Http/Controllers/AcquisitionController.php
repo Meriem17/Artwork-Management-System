@@ -34,7 +34,8 @@ class AcquisitionController extends Controller
                 'prix'=> 'required',
                 'moyenAcquisition'=> 'required',
                 'preuveAchat'=> 'required',
-                'certificatAuthenticite'
+                'certificatAuthenticite',
+                'ouvrage_id'=> 'required',
             ]);
 
     // On crée un nouvel utilisateur
@@ -46,6 +47,7 @@ class AcquisitionController extends Controller
             'moyenAcquisition'=> $request->moyenAcquisition,
             'preuveAchat'=> $request->preuveAchat,
             'certificatAuthenticite'=> $request->certificatAuthenticite,
+            'ouvrage_id'=> $request->ouvrage_id,
     ]);
 
     // On retourne les informations du nouvel utilisateur en JSON
@@ -75,7 +77,8 @@ class AcquisitionController extends Controller
         'prix'=> 'required',
         'moyenAcquisition'=> 'required',
         'preuveAchat'=> 'required',
-        'certificatAuthenticite'
+        'certificatAuthenticite',
+        'ouvrage_id'=> 'required',
     ]);
 
     // On modifie les informations de l'utilisateur
@@ -87,6 +90,7 @@ class AcquisitionController extends Controller
         'moyenAcquisition'=> $request->moyenAcquisition,
         'preuveAchat'=> $request->preuveAchat,
         'certificatAuthenticite'=> $request->certificatAuthenticite,
+        'ouvrage_id'=> $request->ouvrage_id,
 
     ]);
 

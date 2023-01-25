@@ -31,7 +31,8 @@ class AcquisitionRequest extends FormRequest
             'prix'=> 'required',
             'moyenAcquisition'=> 'required',
             'preuveAchat'=> 'required',
-            'certificatAuthenticite'
+            'certificatAuthenticite',
+            'ouvrage_id'=> 'required',
 
               
         ];

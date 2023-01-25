@@ -17,11 +17,11 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->string('prenom');
-            $table->string('dateNaissance');
+            $table->date('dateNaissance');
             $table->string('lieuNaissance');
-            $table->string('dateDeces');
+            $table->date('dateDeces');
             $table->string('lieuDeces');
-            $table->string('Nationalité');
+            $table->string('Nationalite');
             $table->string('Biographie');
             
 

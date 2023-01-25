@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('localisation');
             $table->string('description');
+            $table->unsignedBigInteger('ouvrage_id');
+            $table->foreign('ouvrage_id')->references('id')->on('ouvrages')->onDelete('cascade');
         });
     }
 

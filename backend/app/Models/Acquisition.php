@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\ouvrage;
 
 class Acquisition extends Model
 {
@@ -18,6 +19,11 @@ class Acquisition extends Model
         'prix',
         'moyenAcquisition',
         'preuveAchat',
-        'certificatAuthenticite'
+        'certificatAuthenticite',
+        'ouvrage_id'
      ];
+     public function ouvrage()
+     {
+         return $this->belongsTo(ouvrage::class, 'foreign_key');
+     }
 }

@@ -18,7 +18,7 @@ class Artiste extends Model
         'lieuNaissance', 
         'dateDeces',
         'lieuDeces',
-        'Nationalité',
+        'Nationalite',
         'Biographie'
      ];
 }
