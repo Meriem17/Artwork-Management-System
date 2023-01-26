@@ -6,11 +6,18 @@ import { ImageMangementComponent } from './image-mangement/image-mangement.compo
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WelcomepageComponent } from './welcomepage/welcomepage.component';
+import { OeuvremanagementComponent } from './oeuvremanagement/oeuvremanagement.component';
+
 const routes: Routes = [
   {
     path: '',
     component: NavAdminComponent,
     children: [
+      {
+        path: 'welcome',
+        component: WelcomepageComponent,
+
+      },
       {
         path: 'artisteMangement',
         component: ArtisteMangementComponent,
@@ -19,6 +26,11 @@ const routes: Routes = [
       {
         path: 'image',
         component: ImageMangementComponent,
+
+      },
+      {
+        path: 'oeuvre',
+        component: OeuvremanagementComponent,
 
       },
     ]

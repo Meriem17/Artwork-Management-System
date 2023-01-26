@@ -1,17 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="artisteMangement">Gestion des artistes</a>
-      <a mat-list-item href="image">gestion des images</a>
-      <a mat-list-item href="#">Link</a>
-    </mat-nav-list>
-  </mat-sidenav>
+
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar >
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -20,9 +10,30 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Base des données Samiha eli theb</span>
+      <span></span>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
+
+
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+
+      <mat-toolbar >Menu</mat-toolbar>
+
+    <mat-nav-list>
+      <a mat-list-item href="welcome" id="menu">Menu</a>
+      <a mat-list-item href="artisteMangement">Artist Management</a>
+      <a mat-list-item href="oeuvre">ArtWork Management</a>
+      <a mat-list-item href="image">Image management</a>
+
+
+    </mat-nav-list>
+
+
+  </mat-sidenav>
+
 
 </mat-sidenav-container>

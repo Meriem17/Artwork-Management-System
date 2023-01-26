@@ -18,6 +18,7 @@ import { ImageMangementComponent } from './image-mangement/image-mangement.compo
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WelcomepageComponent } from './welcomepage/welcomepage.component';
+import { OeuvremanagementComponent } from './oeuvremanagement/oeuvremanagement.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { WelcomepageComponent } from './welcomepage/welcomepage.component';
     ImageMangementComponent,
     SidebarComponent,
     NavbarComponent,
-    WelcomepageComponent
+    WelcomepageComponent,
+    OeuvremanagementComponent
   ],
   imports: [
     BrowserModule,
